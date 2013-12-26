@@ -12,7 +12,6 @@
 		AA0BBB1B186BB19000B645DE /* NSBundle+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0BBB1A186BB19000B645DE /* NSBundle+Additions.m */; };
 		AA0BBB2C186BC16800B645DE /* XBSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0BBB2B186BC16800B645DE /* XBSPlayer.m */; };
 		AA3DFD20186C8ED7003EA97A /* XBSPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3DFD1F186C8ED7003EA97A /* XBSPlugin.m */; };
-		AA3DFD26186C92D5003EA97A /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = AA3DFD25186C92D5003EA97A /* Sounds */; };
 		AA3DFD29186C98D3003EA97A /* XBSUserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3DFD28186C98D3003EA97A /* XBSUserDefaultsManager.m */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +33,6 @@
 		AA0BBB2B186BC16800B645DE /* XBSPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBSPlayer.m; sourceTree = "<group>"; };
 		AA3DFD1E186C8ED7003EA97A /* XBSPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBSPlugin.h; sourceTree = "<group>"; };
 		AA3DFD1F186C8ED7003EA97A /* XBSPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBSPlugin.m; sourceTree = "<group>"; };
-		AA3DFD25186C92D5003EA97A /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		AA3DFD27186C98D3003EA97A /* XBSUserDefaultsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBSUserDefaultsManager.h; sourceTree = "<group>"; };
 		AA3DFD28186C98D3003EA97A /* XBSUserDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBSUserDefaultsManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,7 +96,6 @@
 				AA3DFD1F186C8ED7003EA97A /* XBSPlugin.m */,
 				AA0BBB2A186BC16800B645DE /* XBSPlayer.h */,
 				AA0BBB2B186BC16800B645DE /* XBSPlayer.m */,
-				AA0BBB29186BC12700B645DE /* Resources */,
 				AA0BBB0B186BAFB200B645DE /* Supporting Files */,
 			);
 			path = XcodeBuildSound;
@@ -131,14 +128,6 @@
 				AA0BBB1D186BB4D600B645DE /* IDEBuildOperation.h */,
 			);
 			name = "Xcode5-Headers";
-			sourceTree = "<group>";
-		};
-		AA0BBB29186BC12700B645DE /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				AA3DFD25186C92D5003EA97A /* Sounds */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +181,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA3DFD26186C92D5003EA97A /* Sounds in Resources */,
 				AA0BBB0F186BAFB200B645DE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

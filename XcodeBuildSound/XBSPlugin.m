@@ -48,8 +48,14 @@ static XBSPlugin *_sharedPlugin = nil;
     self = [super init];
     
     if (self) {
-        // Show the version information
-        NSLog(@"XcodeBuildSound v%@ was successfully loaded.", [self.bundle shortVersionString]);
+        // Create directories
+        NSString *resourcePath = [self.bundle resourcePath];
+        NSString *soundsPath = [resourcePath stringByAppendingPathComponent:@"Sounds"];
+        NSString *successSoundPath = [soundsPath stringByAppendingPathComponent:@"Success"];
+        NSString *failureSoundPath = [soundsPath stringByAppendingPathComponent:@"Failure"];
+        
+        [[NSFileManager defaultManager] createDirectoryAtPath:successSoundPath withIntermediateDirectories:YES attributes:nil error:NULL];
+        [[NSFileManager defaultManager] createDirectoryAtPath:failureSoundPath withIntermediateDirectories:YES attributes:nil error:NULL];
         
         // Load sounds
         XBSPlayer *player = [[XBSPlayer alloc] init];
@@ -63,6 +69,9 @@ static XBSPlugin *_sharedPlugin = nil;
                                                  selector:@selector(buildOperationDidStop:)
                                                      name:@"IDEBuildOperationDidStopNotification"
                                                    object:nil];
+        
+        // Show the version information
+        NSLog(@"XcodeBuildSound v%@ was successfully loaded.", [self.bundle shortVersionString]);
     }
     
     return self;
