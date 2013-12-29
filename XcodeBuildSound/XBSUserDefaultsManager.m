@@ -8,8 +8,8 @@
 
 #import "XBSUserDefaultsManager.h"
 
-static NSString * const kXBSUserDefaultsManagerSuccessSoundsEnabledKey = @"successSoundsEnabled";
-static NSString * const kXBSUserDefaultsManagerFailureSoundsEnabledKey = @"failureSoundsEnabled";
+static NSString * const kXBSUserDefaultsManagerSuccessSoundsEnabledKey = @"jp.questbeat.XcodeBuildSound.successSoundsEnabled";
+static NSString * const kXBSUserDefaultsManagerFailureSoundsEnabledKey = @"jp.questbeat.XcodeBuildSound.failureSoundsEnabled";
 
 @implementation XBSUserDefaultsManager
 

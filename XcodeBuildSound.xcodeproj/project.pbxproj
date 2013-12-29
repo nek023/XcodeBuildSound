@@ -90,12 +90,7 @@
 			children = (
 				AA0BBB1E186BB4D900B645DE /* Xcode5-Headers */,
 				AA0BBB1C186BB19400B645DE /* Categories */,
-				AA3DFD27186C98D3003EA97A /* XBSUserDefaultsManager.h */,
-				AA3DFD28186C98D3003EA97A /* XBSUserDefaultsManager.m */,
-				AA3DFD1E186C8ED7003EA97A /* XBSPlugin.h */,
-				AA3DFD1F186C8ED7003EA97A /* XBSPlugin.m */,
-				AA0BBB2A186BC16800B645DE /* XBSPlayer.h */,
-				AA0BBB2B186BC16800B645DE /* XBSPlayer.m */,
+				AAB3920C187021D9002992F3 /* Shared */,
 				AA0BBB0B186BAFB200B645DE /* Supporting Files */,
 			);
 			path = XcodeBuildSound;
@@ -128,6 +123,19 @@
 				AA0BBB1D186BB4D600B645DE /* IDEBuildOperation.h */,
 			);
 			name = "Xcode5-Headers";
+			sourceTree = "<group>";
+		};
+		AAB3920C187021D9002992F3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AA3DFD27186C98D3003EA97A /* XBSUserDefaultsManager.h */,
+				AA3DFD28186C98D3003EA97A /* XBSUserDefaultsManager.m */,
+				AA3DFD1E186C8ED7003EA97A /* XBSPlugin.h */,
+				AA3DFD1F186C8ED7003EA97A /* XBSPlugin.m */,
+				AA0BBB2A186BC16800B645DE /* XBSPlayer.h */,
+				AA0BBB2B186BC16800B645DE /* XBSPlayer.m */,
+			);
+			name = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
